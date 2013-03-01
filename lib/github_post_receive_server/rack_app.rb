@@ -14,6 +14,8 @@ require 'rack'
 require 'json'
 require 'erb'
 
+$stdout.sync = true  # Make logging possible
+
 module GithubPostReceiveServer
   class RackApp
     GO_AWAY_COMMENT = "Be gone, foul creature of the internet."
